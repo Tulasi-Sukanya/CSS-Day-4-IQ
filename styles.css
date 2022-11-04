@@ -1,0 +1,140 @@
+body{
+    height:900px;
+    width: 100%;
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#text-div{
+    margin-top: 150px;
+    margin-left: 250px;
+    font-size: 17px;
+    color: white;
+    height:150px;
+    width:800px;
+}
+button{
+    height: 40px;
+    width:150px;
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: green;
+}
+header{
+    background-color: transparent;
+    height:60px;
+}
+img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+#right{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -50px;
+}
+li,a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition:all 0.3s ease 0s;
+}
+a:hover{
+    background-color: lightpink;
+}
+#flex-container{
+    margin-left: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards{
+    height:200px;
+    width: 200px;
+    padding:10px;
+    margin: 10px;
+    background-color: lightpink;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+.cards:hover{
+    background-color: whitesmoke;
+}
+.btn-container{
+    margin-left: 500px;
+}
+#login-button{
+    height: 40px;
+    width:150px;
+    background-color: palevioletred;
+    color: white;
+    border:2px solid black;
+    border-radius: 4px;
+}
+#signup-button{
+    height: 40px;
+    width:150px;
+    background-color: brown;
+    color: white;
+    border:2px solid black;
+    border-radius: 4px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.box{
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: lightgrey;
+    border: 2px solid  black;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    padding:15px;
+}
+.box:hover{
+    box-shadow: 5px 5px lightpink;
+    transform: translateY(-5px);
+}
+.b1:hover{
+    transform: translateX(-5px);
+}
+/* Mobile view of buttons */
+@media screen and (min-width:370px) and (max-width:500px) {
+    #flex-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .cards{
+        margin:auto;
+    }
+    #btn-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #login-button,#signup-button{
+        background-color: green;
+    }
+}
+/* Ipad view */
+@media screen and (min-width:501px) and (max-width:800px) {
+    #btn-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #login-button,#signup-button{
+        background-color: red;
+    }
+}
